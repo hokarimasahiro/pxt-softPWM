@@ -19,11 +19,10 @@ namespace softPWM {
     /**
      * PWM in software
      * @param mode PWM mode , eg: pwmMode.servo
-     * @param pin Output pin number , eg: DigitalPin.P8
      * @param interval pwm Interval in uS, eg: 20000
      */
-    //% blockId="init" block="initPWM %mode:pwmMode %pin:DigitalPin %interval"
-    export function init(mode: pwmMode,  interval: number): void {
+    //% blockId="initpwm" block="initPWM %mode:pwmMode %interval"
+    export function initPwm(mode: pwmMode,  interval: number): void {
         StartTime = input.runningTimeMicros();
         NextTime = StartTime;
         PwmMode = mode;
@@ -32,9 +31,10 @@ namespace softPWM {
 
     /**
      * start PWM
+     * @param pin Output pin number , eg: DigitalPin.P8
      * @param value PWM value, eg: 90
      */
-    //% blockId="setPwmValue" block="set PWM value %value"
+    //% blockId="setPwmValue" block="set PWM value %pin %value"
     export function setPwmValue(pin: DigitalPin,value: number): void {
         PinNo = pin;
         PwmValue = value;
