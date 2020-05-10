@@ -23,7 +23,7 @@ namespace softPWM {
      * @param interval pwm Interval in uS, eg: 20000
      */
     //% blockId="init" block="initPWM %mode:pwmMode %pin:DigitalPin %interval"
-    export function init(mode: pwmMode, pin: DigitalPin, interval: number = 20000): void {
+    export function init(mode: pwmMode, pin: DigitalPin, interval: number): void {
         StartTime = input.runningTimeMicros();
         NextTime = StartTime;
         PwmMode = mode;
