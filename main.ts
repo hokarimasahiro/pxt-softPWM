@@ -3,12 +3,13 @@
 */
 //% color=#006464 weight=20 icon="\uf1b9" block="softPWM"
 enum pwmMode {
-	//%block servo
-servo = 0,
-	//%block analog
-analog = 1
+    //%block=servo
+    servo = 0,
+    //%block=analog
+    analog = 1
 }
 namespace softPWM {
+
     let PwmMode: pwmMode;
     let PinNo: DigitalPin;
     let Interval: number;
