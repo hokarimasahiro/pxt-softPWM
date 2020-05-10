@@ -22,7 +22,7 @@ namespace softPWM {
      * @param mode PWM mode , eg: pwmMode.servo
      * @param interval pwm Interval in uS, eg: 20000
      */
-    //% blockId="initpwm" block="initPWM %mode:pwmMode %interval"
+    //% blockId="initpwm" block="initPWM %mode %interval"
     export function initPwm(mode: pwmMode,  interval: number): void {
         StartTime = input.runningTimeMicros();
         NextTime = StartTime;
