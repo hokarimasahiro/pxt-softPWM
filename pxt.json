@@ -3,8 +3,7 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "pxt-watchfont": "workspace:3470292d-f8f0-4c4c-6831-87c752337deb"
+        "core": "*"
     },
     "files": [
         "README.md",
